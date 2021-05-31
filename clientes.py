@@ -84,7 +84,30 @@ class App(Funcs, Relatorios, Validadores):
 
 
 
+            bg="#808080",
+            fg= "#363636",
+            activebackgroud="A9A9A9",
+            activeforegroud="#363636",
+            font=("verdane","10"),
+            command= self.insere_cliente
+        )
+        self.bt_nono.place(relx=0.6, rely= 0.1, relwidh=0.1, relheight=0.1)
+        
+        # Botão Alterar
+        self.bt_alterar = Button(self.aba1, text="Alterar", bd = 2, bg = "#808080", fg = "363636",
+                                activebackgroud="#A9A9A9", activeforegroud= "#363636",
+                                font = ("verdana","10"), command = self.altera_cliente)
+        self.bt_altera.place(relx=0.7, reley= 0.1, relwidh=0.1, relheight=0.1)
+        
+        # Botão apagar 
+        self.bt_apagar = Button(self.aba1, text = "Apagar", bd = 2, bg = "#808080", fg = "363636",
+        activebackgroud = "#A9A9A9", activeforegroud = "#363636",
+        font = ("verdana", "10"), command = self.deleta_cliente)
+        self.bt_apagar.place(relex=0.6, reley=0.1, relwidh=0.1, relheight=0.1)
 
+        #Criação da Label e Entrada do Código
+        self.Ib_codigo = Label(self.aba1, text="Código", bd = "#363636", fg = "#808080",font = ("trebouchet","10"))
+        self.Ib_codigo.place(relex = 0.008, reley = 0.02)
 
 
 
